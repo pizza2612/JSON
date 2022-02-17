@@ -1,1 +1,13 @@
-
+{
+        "id":1,
+        "name":"PHP error appears in window after input SQL request in lield of login",
+        "Descriprion": "If enter SQL request in lield of login and press [Поехали] button PHP error appears in 
+        "Actual result": Warning: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\OpenServer\domains\megatask\index.php on line 15
+Expected result:  Window with text Error appears",
+        "Steps to reproduce":"1. Open page via URL http://megatask/ 
+2. Enter  DB request (SELECT * FROM users WHERE u_ul LIKE ‘a%’) in field "Логин"
+3. Enter  correct password (b) in field "Пароль"
+4. Press [Поехали] button",
+        "Severity":"minor",
+        "Priority": "Medium"
+}
